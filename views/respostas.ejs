@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Gabaritos</title>
+</head>
+<body>
+<hr>
+<div class="container">
+    <h1 class="h1 text-center">GABARITOS</h1>
+</div>
+<hr>
+<hr>
+
+<% //Container com os gabaritos do Descritor 4 de Língua Portuguesa %>
+<div class="container-fluid">
+        <h4>ATIVIDADE AVALIATIVA DE GEOGRAFIA</h4>
+        <table class="table table-bordered table-striped table-sm">
+            <tbody>
+                <tr>
+                    <th>NOME</th>
+                    <th>TURMA</th>
+                    <th>Q 1</th>
+                    <th>Q 2</th>
+                    <th>Q 3</th>
+                    <th>Q 4</th>
+                    <th>Q 5</th>
+                    <th>Q 6</th>
+                    <th>Q 7</th>
+                    <th>Q 8</th>
+                    <th>Q 9</th>
+                    <th>Q 10</th>
+                    <th>Q 11</th>
+                    <th>Q 12</th>
+                    <th>Q 13</th>
+                    <th>Q 14</th>
+                    <th>Q 15</th>
+                    <th>Q 16</th>
+                    <th>Q 17</th>
+                    <th>Q 18</th>
+                    <th>Q 19</th>
+                    <th>Q 20</th>
+                    <th>NOTA</th>
+                    <th>AÇÃO</th>
+                </tr>
+                
+                <% res_atividade.forEach((gabaritolpd4) => { %>
+                   
+                    <tr>
+                        <td><%= gabaritolpd4.nome %></td>
+                        <td><%= gabaritolpd4.turma %></td>
+                        <td>
+                            <%= gabaritolpd4.q1 %>
+                            <%
+                                if(gabaritolpd4.q1=="A"){
+                                    total++
+                                }
+                             %>
+                             
+                        </td>
+                        <td>
+                            <%= gabaritolpd4.q2 %>
+                            <% 
+                                if(gabaritolpd4.q2 == "B"){
+                                    total++
+                                }
+                             %>
+                        </td>
+                        <td>
+                            <%= gabaritolpd4.q3 %>
+                            <% 
+                                if(gabaritolpd4.q3 == "D"){
+                                    total++
+                                }
+                             %>
+                        </td>
+                        
+                        <td>
+                            <%= gabaritolpd4.q4 %>
+                            <% 
+                                if(gabaritolpd4.q4 == "A"){
+                                    total++
+                                }
+                             %>
+                        </td>
+                        <td>
+                            <%= gabaritolpd4.q5 %>
+
+                            <% 
+                                if(gabaritolpd4.q5 == "C"){
+                                    total++
+                                }
+                             %>
+                        
+                        </td>
+                        <td>
+                            <%= gabaritolpd4.q6 %>
+                            <% 
+                                if(gabaritolpd4.q6 == "B"){
+                                    total++
+                                }
+                             %>
+                        </td>
+                        <td>
+                            <%= gabaritolpd4.q7 %>
+                            <% 
+                                if(gabaritolpd4.q7 == "A"){
+                                    total++
+                                }
+                             %>
+                        </td>
+                        <td>
+                            <%= gabaritolpd4.q8 %>
+                            <% 
+                                if(gabaritolpd4.q8 == "D"){
+                                    total++
+                                }
+                             %>
+                        </td>
+                        <td>
+                            <%= gabaritolpd4.q9 %>
+                            <% 
+                                if(gabaritolpd4.q9 == "B"){
+                                    total++
+                                }
+                             %>
+                        </td>
+                        <td>
+                            <%= gabaritolpd4.q10 %>
+                            <% 
+                                if(gabaritolpd4.q10 == "C"){
+                                    total++
+                                }
+                             %>
+                        </td>
+                        <td>
+                            <%= gabaritolpd4.q11 %>
+                            <% 
+                                if(gabaritolpd4.q11 == "B"){
+                                    total++
+                                }
+                             %>
+                        </td>
+                        <td>
+                            <%= gabaritolpd4.q12 %>
+                            <% 
+                                if(gabaritolpd4.q12 == "D"){
+                                    total++
+                                }
+                             %>
+                        </td>
+                        <td>
+                            <%= gabaritolpd4.q13 %>
+                            <% 
+                                if(gabaritolpd4.q13 == "D"){
+                                    total++
+                                }
+                             %>
+                        </td>
+                        <td>
+                            <%= gabaritolpd4.q14 %>
+                            <% 
+                                if(gabaritolpd4.q14 == "B"){
+                                    total++
+                                }
+                             %>
+                        </td>
+                        <td>
+                            <%= gabaritolpd4.q15 %>
+                            <% 
+                                if(gabaritolpd4.q15 == "C"){
+                                    total++
+                                }
+                             %>
+                        </td>
+                        <td>
+                            <%= gabaritolpd4.q16 %>
+                            <% 
+                                if(gabaritolpd4.q16 == "B"){
+                                    total++
+                                }
+                             %>
+                        </td>
+                        <td>
+                            <%= gabaritolpd4.q17 %>
+                            <% 
+                                if(gabaritolpd4.q17 == "A"){
+                                    total++
+                                }
+                             %>
+                        </td>
+                        <td>
+                            <%= gabaritolpd4.q18 %>
+                            <% 
+                                if(gabaritolpd4.q18 == "C"){
+                                    total++
+                                }
+                             %>
+                        </td>
+                        <td>
+                            <%= gabaritolpd4.q19 %>
+                            <% 
+                                if(gabaritolpd4.q19 == "A"){
+                                    total++
+                                }
+                             %>
+                        </td>
+                        <td>
+                            <%= gabaritolpd4.q20 %>
+                            <% 
+                                if(gabaritolpd4.q20 == "C"){
+                                    total++
+                                }
+                             %>
+                        </td>
+                        <td><%= total %></td>
+                        <% total = 0 %>
+                        
+                        <td>
+                            <form method="POST" action="/deletar_res">
+                                <input type="hidden" name="id" value="<%=gabaritolpd4.id%>">
+                                <button class="btn btn-danger">Deletar</button>
+                            </form>
+                        </td>
+                    </tr>
+                <% }) %>
+               
+            </tbody>
+        </table>
+</div>
+
+
+</body>
+<script>
+    var container_lp_maio = document.getElementById('container_lp_maio');
+    var container_mat_maio = document.getElementById('container_mat_maio');
+
+    botao_esconder_gabaritos_lp_maio.addEventListener('click', function() {
+      container_lp_maio.style.display = 'none';
+    });
+
+    botao_esconder_gabaritos_mat_maio.addEventListener('click', function() {
+      container_mat_maio.style.display = 'none';
+    });
+
+    botao_mostrar_gabaritos_lp_maio.addEventListener('click', function() {
+      container_lp_maio.style.display = 'block';
+    });
+
+    botao_mostrar_gabaritos_mat_maio.addEventListener('click', function() {
+      container_mat_maio.style.display = 'block';
+    });
+  </script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/popper.min.js"></script>
+</html>
